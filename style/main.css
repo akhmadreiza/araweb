@@ -66,7 +66,7 @@ body {
 
 .content-right h4 {
     margin: 5px 0px;
-    color: #EF8354;
+    color: #f5c396;
 }
 
 .content-right h5 {
@@ -98,7 +98,7 @@ a:hover {
 }
 
 .nick {
-    color: #EF8354;
+    color: #f5c396;
 }
 
 /* Use a media query to add a break point at 800px: */
