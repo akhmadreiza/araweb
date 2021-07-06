@@ -17,51 +17,54 @@ body {
     background-color: #121212;
 }
 
-.side {
-    height: 100%;
-    /* width: 650px; */
-    float: left;
-    width: 45%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    overflow-x: hidden;
-    overflow: hidden;
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
 }
 
 .content {
     height: 100%;
-    /*margin-left: 700px;*/ /*sidebar width + 50px*/
-    float: right;
-    width: 55%;
+    width: 100%;
 }
 
 .content-left {
-    padding: 20px 100px;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
 }
 
 .content-left h1 {
-    font-size: 35px;
+    font-size: 50px;
     color: #FFFFFF;
+    margin-bottom: 0;
 }
 
 .content-left p {
     line-height: 1.5;
     color: #bebebe;
+    margin-top: 0;
 }
 
 .content-right {
-    padding: 20px 50px 50px 10px;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
 }
 
 .content-right h1 {
-    font-size: 50px;
+    font-size: 45px;
     color: #FFFFFF;
+    margin: 0;
 }
 
 .content-right h2 {
     color: #FFFFFF;
+}
+
+.content-right h3 {
+    margin-top: 12px;
+    color: #878683;
 }
 
 .content-right h4 {
@@ -75,8 +78,8 @@ body {
 }
 
 .content-right p {
-    margin: 0;
     color: #bebebe;
+    line-height: 1.5;
 }
 
 .year {
@@ -101,19 +104,40 @@ a:hover {
     color: #878683;
 }
 
+.post-date{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+hr {
+    height:2px;
+    border-width:0;
+    color:#878683;
+    background-color:#878683;
+    margin: 30px 0px;
+}
+
 /* Use a media query to add a break point at 800px: */
-@media screen and (max-width: 999px) {
-    .side, .content {
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-        float: left;
+@media screen and (max-width: 1024px) {
+    .content-left, .content-right {
+        width: 90%;
     }
-    .side {
-        position: relative;
+}
+
+@media screen and (max-width: 420px) {
+    .content-left h1, .content-right h1 {
+        font-size: 45px;
     }
-    .content-left {
-        padding: 0px 20px;
+}
+
+@media screen and (max-width: 380px) {
+    .content-left h1, .content-right h1 {
+        font-size: 40px;
     }
-    .content-right {
-        padding: 0px 20px 50px 20px;
+}
+
+@media screen and (max-width: 345px) {
+    .content-left h1, .content-right h1 {
+        font-size: 35px;
     }
 }
