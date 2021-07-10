@@ -110,7 +110,7 @@ a:hover {
     .side {
         position: relative;
     }
-    .content-left {
+    .content-left, ul {
         padding: 0px 20px;
     }
     .content-right {

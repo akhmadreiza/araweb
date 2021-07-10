@@ -87,7 +87,13 @@ body {
 }
 
 .content-container {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
+    padding: 20px;
+    /* background-color: rgb(37, 37, 37); */
+    background-color: #1f1f1f;
+    /* for shadowing the div, need more research */
+    /* border: 1px solid; */
+    /* box-shadow: 5px 10px 18px #888888;  */
 }
 
 a {
@@ -124,18 +130,14 @@ img {
     text-align: center;
 }
 
-figure {
+.wp-block-image, .is-style-default{
     max-width: 100%;
     height: auto;
     text-align: center;
-    border:1px solid #878683;
-    margin: 16px 0px;
 }
 
 figcaption {
     color: #878683;
-    font-size: 12px;
-    margin: 10px 0px;
 }
 
 /* CSS for wordpress image end */
@@ -143,42 +145,33 @@ figcaption {
 /* Use a media query to add a break point at 800px: */
 @media screen and (max-width: 1024px) {
     .content-left, .content-right {
-        width: 80%;
+        width: 90%;
     }
 }
 
 @media screen and (max-width: 420px) {
-    .content-left, .content-right {
-        width: 90%;
-    }
     .content-left h1, .content-right h1 {
         font-size: 45px;
     }
     figure {
-        margin: auto;
+        margin: 20px 0px;
     }
 }
 
 @media screen and (max-width: 380px) {
-    .content-left, .content-right {
-        width: 90%;
-    }
     .content-left h1, .content-right h1 {
         font-size: 40px;
     }
     figure {
-        margin: auto;
+        margin: 20px 0px;
     }
 }
 
 @media screen and (max-width: 345px) {
-    .content-left, .content-right {
-        width: 90%;
-    }
     .content-left h1, .content-right h1 {
         font-size: 35px;
     }
     figure {
-        margin: auto;
+        margin: 20px 0px;
     }
 }
