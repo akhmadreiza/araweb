@@ -43,7 +43,7 @@ body {
 .content-left p {
     line-height: 1.5;
     color: #bebebe;
-    margin-top: 0;
+    margin: 5px 0px;
 }
 
 .content-right {
@@ -63,7 +63,7 @@ body {
 }
 
 .content-right h3 {
-    margin-top: 12px;
+    margin-top: 1px;
     color: #878683;
 }
 
@@ -117,6 +117,26 @@ hr {
     margin: 30px 0px;
 }
 
+/* CSS for wordpress image */
+
+img {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.wp-block-image, .is-style-default{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+figcaption {
+    color: #878683;
+}
+
+/* CSS for wordpress image end */
+
 /* Use a media query to add a break point at 800px: */
 @media screen and (max-width: 1024px) {
     .content-left, .content-right {
@@ -128,16 +148,25 @@ hr {
     .content-left h1, .content-right h1 {
         font-size: 45px;
     }
+    figure {
+        margin: 20px 0px;
+    }
 }
 
 @media screen and (max-width: 380px) {
     .content-left h1, .content-right h1 {
         font-size: 40px;
     }
+    figure {
+        margin: 20px 0px;
+    }
 }
 
 @media screen and (max-width: 345px) {
     .content-left h1, .content-right h1 {
         font-size: 35px;
+    }
+    figure {
+        margin: 20px 0px;
     }
 }
