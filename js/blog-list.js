@@ -1,4 +1,4 @@
-const wpUrl = 'http://localhost/wordpress/wp-json';
+const wpUrl = 'http://206.189.86.170:8000/wp-json';
 const content = document.querySelector('div.content-right');
 let postDate;
 let strExcerpt;

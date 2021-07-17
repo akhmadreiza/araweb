@@ -4,7 +4,7 @@ console.log(postId)
 if (!postId) {
     window.location.href = 'index.html';
 }
-const wpUrl = 'http://localhost/wordpress/wp-json';
+const wpUrl = 'http://206.189.86.170:8000/wp-json';
 const contentContainer = document.querySelector('div.content-container');
 let postDate;
 
