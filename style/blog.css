@@ -31,7 +31,7 @@ body {
 .content-left {
     margin: auto;
     width: 50%;
-    padding: 10px;
+    padding: 0px 10px;
 }
 
 .content-left h1 {
@@ -48,11 +48,10 @@ body {
 .content-right {
     margin: auto;
     width: 50%;
-    padding: 10px;
+    padding: 0px 10px;
 }
 
 .content-right h1 {
-    font-size: 45px;
     color: #FFFFFF;
     margin: 0;
 }
@@ -62,8 +61,10 @@ body {
 }
 
 .content-right h3 {
-    margin-top: 1px;
+    margin: 10px 0px;
     color: #878683;
+    font-size: 15px;
+    font-weight: normal;
 }
 
 .content-right h4 {
@@ -84,10 +85,6 @@ body {
 .year {
     margin-left: 5px;
     color: #bebebe;
-}
-
-.content-container {
-    margin-bottom: 50px;
 }
 
 a {
@@ -116,6 +113,23 @@ hr {
     margin: 30px 0px;
 }
 
+.footer-copyright {
+    width: 50%;
+    height: 60px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.footer-copyright p {
+    text-align: center;
+    color: #bebebe;
+    margin: 20px 0px;
+}
+
+.footer-copyright hr {
+    margin-bottom: 5px;
+}
+
 /* CSS for wordpress image */
 
 img {
@@ -142,14 +156,14 @@ figcaption {
 
 /* Use a media query to add a break point at 800px: */
 @media screen and (max-width: 1024px) {
-    .content-left, .content-right {
+    .content-left, .content-right, .footer-copyright {
         width: 80%;
     }
 }
 
 @media screen and (max-width: 420px) {
-    .content-left, .content-right {
-        width: 90%;
+    .content-left, .content-right, .footer-copyright {
+        width: 95%;
     }
     .content-left h1, .content-right h1 {
         font-size: 45px;
@@ -160,8 +174,8 @@ figcaption {
 }
 
 @media screen and (max-width: 380px) {
-    .content-left, .content-right {
-        width: 90%;
+    .content-left, .content-right, .footer-copyright {
+        width: 95%;
     }
     .content-left h1, .content-right h1 {
         font-size: 40px;
@@ -172,8 +186,8 @@ figcaption {
 }
 
 @media screen and (max-width: 345px) {
-    .content-left, .content-right {
-        width: 90%;
+    .content-left, .content-right, .footer-copyright {
+        width: 95%;
     }
     .content-left h1, .content-right h1 {
         font-size: 35px;

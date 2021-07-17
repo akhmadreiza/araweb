@@ -25,7 +25,8 @@ fetch(wpUrl + '/wp/v2/posts')
                 <h3>
                     ${postDate}
                 </h3>
-                ${subStrExcerpt} <br> <a href="./blog.html?id=${element.id}">Selengkapnya</a>
+                ${subStrExcerpt}
+                <p><a href="./blog.html?id=${element.id}">Selengkapnya</a></p>
             </div>
             `;
       });

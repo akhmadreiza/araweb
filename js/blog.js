@@ -13,6 +13,7 @@ fetch(wpUrl + '/wp/v2/posts/' + postId)
   .then(data => {
       postDate = new Date(data.date).toDateString();
       contentContainer.innerHTML = `
+            <hr>
             <h1>
                 ${data.title.rendered}
             </h1>

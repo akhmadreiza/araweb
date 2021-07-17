@@ -52,7 +52,6 @@ body {
 }
 
 .content-right h1 {
-    font-size: 45px;
     color: #FFFFFF;
     margin: 0;
 }
@@ -62,8 +61,10 @@ body {
 }
 
 .content-right h3 {
-    margin-top: 1px;
+    margin: 10px 0px;
     color: #878683;
+    font-size: 15px;
+    font-weight: normal;
 }
 
 .content-right h4 {
@@ -150,7 +151,7 @@ figcaption {
 }
 
 @media screen and (max-width: 420px) {
-    .content-left h1, .content-right h1 {
+    .content-left h1 {
         font-size: 45px;
     }
     figure {
@@ -159,7 +160,7 @@ figcaption {
 }
 
 @media screen and (max-width: 380px) {
-    .content-left h1, .content-right h1 {
+    .content-left h1 {
         font-size: 40px;
     }
     figure {
@@ -168,7 +169,7 @@ figcaption {
 }
 
 @media screen and (max-width: 345px) {
-    .content-left h1, .content-right h1 {
+    .content-left h1 {
         font-size: 35px;
     }
     figure {
