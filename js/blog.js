@@ -3,6 +3,9 @@ const postId = params.get('id')
 const postSlug = params.get('slug')
 const wpUrl = 'http://206.189.86.170:8000/wp-json';
 const contentContainer = document.querySelector('div.content-container');
+const hrFooter = document.querySelector('.hr-footer');
+const pFooter = document.querySelector('.p-footer');
+
 let postDate;
 
 if (!postId && !postSlug) {
@@ -13,7 +16,6 @@ if (!postId && !postSlug) {
                 <p>Telah terjadi kesalahan pada saat permintaan halaman sehingga tidak ditemukan.
                 <a href="./index.html">Kembali</a>
                 </p>
-                <hr>
             `;
 }
 
@@ -24,8 +26,9 @@ if (postSlug) {
         if (postList.length > 1) throw "slug search return more than one posts";
         data = postList[0]
         postDate = new Date(data.date).toDateString();
+        hrFooter.style.display = 'block'
+        pFooter.style.display = 'block'
         contentContainer.innerHTML = `
-                <hr>
                 <h1>
                     ${data.title.rendered}
                 </h1>
@@ -37,6 +40,8 @@ if (postSlug) {
     })
     .catch(err => {
         console.log(err)
+        hrFooter.style.display = 'block'
+        pFooter.style.display = 'block'
         contentContainer.innerHTML = `
                 <h1>
                     Halaman Tidak Ditemukan.
@@ -44,7 +49,6 @@ if (postSlug) {
                 <p>Telah terjadi kesalahan pada saat permintaan halaman sehingga tidak ditemukan.
                 <a href="./index.html">Kembali</a>
                 </p>
-                <hr>
             `;
     });
 } else if (postId) {
@@ -52,6 +56,8 @@ if (postSlug) {
     .then(response => response.json())
     .then(data => {
         postDate = new Date(data.date).toDateString();
+        hrFooter.style.display = 'block'
+        pFooter.style.display = 'block'
         contentContainer.innerHTML = `
                 <hr>
                 <h1>
@@ -64,6 +70,8 @@ if (postSlug) {
             `;
     })
     .catch(err => {
+        hrFooter.style.display = 'block'
+        pFooter.style.display = 'block'
         contentContainer.innerHTML = `
                 <h1>
                     Halaman Tidak Ditemukan.
@@ -71,7 +79,6 @@ if (postSlug) {
                 <p>Telah terjadi kesalahan pada saat permintaan halaman sehingga tidak ditemukan.
                 <a href="./index.html">Kembali</a>
                 </p>
-                <hr>
             `;
     });
 }

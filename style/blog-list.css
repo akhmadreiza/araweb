@@ -31,7 +31,7 @@ body {
 .content-left {
     margin: auto;
     width: 50%;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .content-left h1 {
@@ -48,7 +48,6 @@ body {
 .content-right {
     margin: auto;
     width: 50%;
-    padding: 10px;
 }
 
 .content-right h1 {

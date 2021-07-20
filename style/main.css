@@ -57,7 +57,8 @@ body {
 }
 
 .content-right {
-    padding: 20px 50px 50px 10px;
+    padding: 20px 0px 50px 10px;
+    width: 85%;
 }
 
 .content-right h1 {
@@ -115,10 +116,14 @@ a:hover {
     .side {
         position: relative;
     }
-    .content-left, ul {
+    ul {
         padding: 0px 20px;
     }
+    .content-left {
+        padding: 20px 30px 0px;
+    }
     .content-right {
-        padding: 0px 20px 50px 20px;
+        padding: 0px 30px 50px 30px;
+        width: 100%;
     }
 }
