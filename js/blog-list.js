@@ -26,7 +26,7 @@ fetch(wpUrl + '/wp/v2/posts')
                     ${postDate}
                 </h3>
                 ${subStrExcerpt}
-                <p><a href="./blog.html?slug=${element.slug}">Selengkapnya</a></p>
+                <p><a href="./blog/${element.slug}">Selengkapnya</a></p>
             </div>
             `;
       });
