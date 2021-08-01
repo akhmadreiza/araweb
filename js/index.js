@@ -1,4 +1,4 @@
-const wpUrl = 'http://localhost:8000/wp-json';
+const wpUrl = 'http://206.189.86.170:8000/wp-json';
 const contentWexperience = document.querySelector('div#wexperience');
 const contentSkills = document.querySelector('div#stack');
 const contentRecentWork1 = document.querySelector('div.projectsContainer')
