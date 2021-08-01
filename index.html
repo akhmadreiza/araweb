@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="./style/main.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+        function githubLogoBrighnessReduced() {
+            var logo = document.getElementById("github-logo");
+            logo.style = "filter: brightness(30%);"
+        }
+        function githubLogoReset() {
+            var logo = document.getElementById("github-logo");
+            logo.style = "filter: brightness(100%);"
+        }
+        function twitterLogoBrighnessReduced() {
+            var logo = document.getElementById("twitter-logo");
+            logo.style = "filter: brightness(30%);"
+        }
+        function twitterLogoReset() {
+            var logo = document.getElementById("twitter-logo");
+            logo.style = "filter: brightness(100%);"
+        }
+    </script>
 </head>
 <body>
     <div class="row">
@@ -26,6 +44,25 @@
                 <p>
                     Software Developer with 8+ years of full-stack experience designing, developing and maintaining web application and back end services.
                 </p>
+                <div>
+                    <a href="https://github.com/akhmadreiza" style="text-decoration: none;" target="blank">
+                        <img id="github-logo" src="GitHub-Mark-Light-120px-plus.png" width="32px" 
+                        onmouseover="githubLogoBrighnessReduced();" 
+                        onmouseout="githubLogoReset();"
+                        onmousedown="githubLogoBrighnessReduced();"
+                        onmouseup="githubLogoReset();"
+                        />
+                    </a>
+                    &nbsp;
+                    <a href="https://twitter.com/akhmadreiza" style="text-decoration: none;" target="blank">
+                        <img id="twitter-logo" src="Twitter-social-icons-circle-white.png" width="32px"
+                        onmouseover="twitterLogoBrighnessReduced();" 
+                        onmouseout="twitterLogoReset();"
+                        onmousedown="twitterLogoBrighnessReduced();"
+                        onmouseup="twitterLogoReset();"
+                        />
+                    </a>
+                </div>
             </div>
         </div>
         <div class="content">
