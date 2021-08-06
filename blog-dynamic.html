@@ -274,6 +274,7 @@
                 postDate = new Date(data.date).toDateString();
                 hrFooter.style.display = 'block'
                 pFooter.style.display = 'block'
+                let content = data.content.rendered
                 contentContainer.innerHTML = `
                         <h1>
                             ${data.title.rendered}
@@ -281,7 +282,7 @@
                         <h3>
                             ${postDate}
                         </h3>
-                        ${data.content.rendered}
+                        ${content.replace('http://206.189.86.170:8000', 'https://akhmadreiza.com')}
                     `;
             })
             .catch(err => {
@@ -304,6 +305,7 @@
                 postDate = new Date(data.date).toDateString();
                 hrFooter.style.display = 'block'
                 pFooter.style.display = 'block'
+                let content = data.content.rendered
                 contentContainer.innerHTML = `
                         <hr>
                         <h1>
@@ -312,7 +314,7 @@
                         <h3>
                             ${postDate}
                         </h3>
-                        ${data.content.rendered}
+                        ${content.replace('http://206.189.86.170:8000', 'https://akhmadreiza.com')}
                     `;
             })
             .catch(err => {
