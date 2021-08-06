@@ -1,4 +1,4 @@
-const wpUrl = 'http://206.189.86.170:8000/wp-json';
+const wpUrl = 'https://akhmadreiza.com/wp-json';
 const content = document.querySelector('div.content-right');
 let postDate;
 let strExcerpt;
