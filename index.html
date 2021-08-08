@@ -25,6 +25,14 @@
             var logo = document.getElementById("twitter-logo");
             logo.style = "filter: brightness(100%);"
         }
+        function linkedinLogoBrighnessReduced() {
+            var logo = document.getElementById("linkedin-logo");
+            logo.style = "filter: brightness(30%);"
+        }
+        function linkedinLogoReset() {
+            var logo = document.getElementById("linkedin-logo");
+            logo.style = "filter: brightness(100%);"
+        }
     </script>
 </head>
 <body>
@@ -60,6 +68,15 @@
                         onmouseout="twitterLogoReset();"
                         onmousedown="twitterLogoBrighnessReduced();"
                         onmouseup="twitterLogoReset();"
+                        />
+                    </a>
+                    &nbsp;
+                    <a href="https://www.linkedin.com/in/akhmadreiza27" style="text-decoration: none;" target="blank">
+                        <img id="linkedin-logo" src="linkedin_logo_white.png" width="32px"
+                        onmouseover="linkedinLogoBrighnessReduced();" 
+                        onmouseout="linkedinLogoReset();"
+                        onmousedown="linkedinLogoBrighnessReduced();"
+                        onmouseup="linkedinLogoReset();"
                         />
                     </a>
                 </div>
